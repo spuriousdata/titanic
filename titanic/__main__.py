@@ -100,15 +100,15 @@ def upload(S, transfer_config, config, s, f):
             if config['overwrite'] == 'older':
                 lmt = dt.fromtimestamp(s.st_mtime, tz.utc)
                 if obj['LastModified'] > lmt:
-                    print("Skipping %s" % f)
+                    #print("Skipping %s" % f)
                     return
             elif config['overwrite'] == 'checksum':
                 if verify(S, config, f, key, s):
-                    print("Skipping %s" % f)
+                    #print("Skipping %s" % f)
                     return
             elif config['overwrite'] == 'never':
                 if obj.get('ETag', None):
-                    print("Skipping %s" % f)
+                    #print("Skipping %s" % f)
                     return
     except Exception as e:
         pass
