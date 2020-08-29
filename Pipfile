@@ -9,6 +9,3 @@ tqdm = "*"
 "e1839a8" = {path = ".", editable = true}
 
 [dev-packages]
-
-[requires]
-python_version = "3.6"
