@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 
-import os
 from setuptools import setup
 
 setup(
     name="titanic",
-    version='0.0.2',
+    version='0.0.4',
     author="Mike O'Malley",
     author_email="spuriousdata@gmail.com",
     license="MIT",
